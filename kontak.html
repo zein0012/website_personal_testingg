@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #1c1c1c;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    }
+    .contact-container h2 {
+      margin-bottom: 20px;
+      color: #f39c12;
+      text-align: center;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .contact-links a {
+      background: #333;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .contact-links a:hover {
+      background: #f39c12;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    form input, form textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 15px;
+      background: #2a2a2a;
+      color: #fff;
+    }
+    form textarea {
+      resize: none;
+    }
+    form button {
+      background: #f39c12;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #fff;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background: #d35400;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Hallo!!</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="pendidikan.html">Pendidikan</a></li>
+        <li><a href="pengalaman.html">Pengalaman</a></li>
+        <li>
+          <a href="keahlian.html">kompetensi ▾</a>
+          <ul>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="skill.html">Skill</a></li>
+          </ul>
+        </li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-container">
+    <h2>Hubungi Saya</h2>
+    <div class="contact-links">
+      <!-- WA -->
+      <a href="https://wa.me/6282261516156" target="_blank">📱 WhatsApp</a>
+      <!-- Gmail -->
+      <a href="sizein0012@gmail.com">📧 Gmail</a>
+    </div>
+
+    <form action="sizein0012@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Nama" placeholder="Nama Anda" required>
+      <input type="email" name="Email" placeholder="Email Anda" required>
+      <textarea name="Pesan" rows="5" placeholder="Tulis kritik & saran Anda..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ZEIN</p>
+  </footer>
+</body>
+</html>

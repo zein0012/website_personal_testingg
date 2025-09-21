@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keahlian</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hero Keahlian dengan background full */
+    .hero-keahlian {
+      min-height: 100vh; /* FULL satu layar */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: url('img/skill-bg.jpg') no-repeat center center/cover;
+      color: #fff;
+      position: relative;
+    }
+    .hero-keahlian::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5); /* overlay agar teks jelas */
+    }
+    .hero-keahlian h1 {
+      position: relative;
+      font-size: 42px;
+      color: #f39c12;
+      z-index: 1;
+    }
+    .hero-keahlian p {
+      position: relative;
+      font-size: 18px;
+      color: #ddd;
+      max-width: 600px;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CV Saya</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="pendidikan.html">Pendidikan</a></li>
+        <li><a href="pengalaman.html">Pengalaman</a></li>
+        <li>
+          <a href="keahlian.html" class="active">kompetensi ▾</a>
+          <ul>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="skill.html">Skill</a></li>
+          </ul>
+        </li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-keahlian">
+    <h1>kompetensi</h1>
+    <p>klik menu di atas untuk melihat prestasi dan skill Saya.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ZEIN</p>
+  </footer>
+</body>
+</html>

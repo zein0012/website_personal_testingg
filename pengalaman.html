@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pengalaman</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.hero {
+  padding: 50px 20px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #222, #000);
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 40px 0;
+  scroll-behavior: smooth;
+}
+.card-container::-webkit-scrollbar {
+  height: 10px;
+}
+.card-container::-webkit-scrollbar-thumb {
+  background: #f39c12;
+  border-radius: 5px;
+}
+.card-container::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  width: 400px;
+  flex: 0 0 auto;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 20px 15px 10px;
+  font-size: 22px;
+}
+.card p {
+  margin: 0 15px 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-container {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .card {
+    width: 300px;
+  }
+}
+</style>
+</head>
+<body class="fade-in">
+
+<header>
+  <div class="logo">Hallo!!</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="pendidikan.html">Pendidikan</a></li>
+      <li><a href="pengalaman.html" class="active">Pengalaman</a></li>
+      <li>
+        <a href="keahlian.html">kompetensi ▾</a>
+        <ul>
+          <li><a href="prestasi.html">Prestasi</a></li>
+          <li><a href="skill.html">Skill</a></li>
+        </ul>
+      </li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Pengalaman</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="img/pengalaman/magang1.jpg" alt="Magang 1">
+      <h3>Workshop Mesin SMKN 2</h3>
+      <p>Mengikuti program magang intensif di bengkel mesin selama 3 bulan untuk
+         Berfokus pada persiapan kompetisi CNC Milling tingkat nasional.</p>
+    </div>
+    <div class="card">
+      <img src="img/pengalaman/robotika.jpg" alt="Proyek Robotika">
+      <h3>PT Consist Product</h3>
+      <p>Berkontribusi penuh selama 3 bulan pada proyek Merancang dan mengembangkan pagar otomatis yang dapat dikendalikan menggunakan remote control
+        dengan hasil implementasi nyata di lapangan.</p>
+    </div>
+    <div class="card">
+      <img src="img/pengalaman/magang2.jpg" alt="Magang 2">
+      <h3>PT Yogya Presisi Teknikatama Industri</h3>
+      <p>6 bulan</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 ZEIN</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

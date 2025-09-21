@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Saya</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Tambahan CSS untuk teks berwarna gradien */
+    .gradient-text {
+      background: linear-gradient(to right, #ffffff, #fefefe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    .gradient-subtext {
+      background: linear-gradient(to right, #f3f0f0, #f2eded);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-size: cover;
+      background-position: center;
+      color: rgb(174, 19, 19);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Hallo!!</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html" class="active">Tentang</a></li>
+        <li><a href="pendidikan.html">Pendidikan</a></li>
+        <li><a href="pengalaman.html">Pengalaman</a></li>
+        <li>
+          <a href="keahlian.html">kompetensi ▾</a>
+          <ul>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="skill.html">Skill</a></li>
+          </ul>
+        </li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Tentang -->
+  <section class="hero" style="background-image: url('img/about-bg.jpg');">
+    <h1 class="gradient-text">Tentang Saya</h1>
+    <p class="gradient-subtext">
+      “Halo! Saya mahasiswa yang bersemangat di bidang manufaktur, desain CAD, dan otomasi industri. 
+      Saya percaya teknologi rekayasa modern bisa menghadirkan solusi yang lebih efisien dan bermanfaat. 
+      Mari kenal lebih jauh karya dan perjalanan saya di sini.”
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ZEIN</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
