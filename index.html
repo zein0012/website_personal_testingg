@@ -5,6 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>zein</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon (muncul di tab browser seperti logo YouTube) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32-transparent.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64-transparent.png">
+  <link rel="icon" type="image/x-icon" href="favicon-transparent.ico">
+
+  <style>
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #222;
+      color: white;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Dropdown */
+    .navbar li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      min-width: 120px;
+    }
+
+    .navbar li:hover ul {
+      display: block;
+    }
+
+    .navbar li ul li a {
+      padding: 8px 12px;
+    }
+
+    /* Gambar profil kecil di navbar */
+    .profile-img {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      object-fit: cover;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero .hero-profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid white; /* opsional biar lebih menonjol */
+    }
+
+    .about-card a {
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -17,32 +122,39 @@
         <li><a href="pendidikan.html">Pendidikan</a></li>
         <li><a href="pengalaman.html">Pengalaman</a></li>
         <li>
-          <a href="keahlian.html">kompetensi▾</a>
+          <a href="keahlian.html">Kompetensi ▾</a>
           <ul>
             <li><a href="prestasi.html">Prestasi</a></li>
             <li><a href="skill.html">Skill</a></li>
           </ul>
         </li>
         <li><a href="kontak.html">Kontak</a></li>
+        <!-- Zein dengan gambar profil kecil -->
+        <li>
+          <a href="#">
+            <img src="img/profile.jpg" alt="Zein" class="profile-img"> Zein
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
-<section class="hero" style="background-image: url('img/home-bg.jpg');">
-  <img src="img/profile.jpg" alt="Foto Profil">
-  <h1>ALFHAZEINTURYAN</h1>
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('img/home-bg.jpg');">
+    <img src="img/profile.jpg" alt="Foto Profil" class="hero-profile">
+    <h1>ALFHAZEINTURYAN</h1>
+    <div class="about-card">
+      <a href="tentang.html">
+        <h3>Lihat Tentang Saya</h3>
+      </a>
+    </div>
+  </section>
 
-  <div class="about-card">
-    <a href="tentang.html">
-      <h3>Lihat Tentang Saya</h3>
-    </a>
-  </div>
-</section>
-
-
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 ZEIN</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

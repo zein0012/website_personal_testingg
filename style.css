@@ -77,3 +77,19 @@ footer{text-align:center;padding:20px;background:#111;color:#aaa;}
 .about-card:hover h3 {
   color: #ffd700;
 }
+/* Style khusus untuk gambar profil di navbar */
+.profile-img {
+  width: 24px;           /* ukuran lebar gambar */
+  height: 24px;          /* tinggi gambar */
+  border-radius: 50%;    /* bikin bulat */
+  object-fit: cover;     /* biar isi gambar proporsional */
+  vertical-align: middle;/* sejajar dengan teks */
+  margin-right: 6px;     /* jarak ke teks "ZEIN" */
+  border: 2px solid #fff;/* kasih garis putih tipis biar elegan */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.2);                /* efek zoom saat hover */
+  box-shadow: 0 0 10px rgba(0,0,0,0.4); /* efek bayangan */
+}
